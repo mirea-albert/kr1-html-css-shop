@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Каталог профессиональной игровой периферии CyberGear.">
+  <title>Каталог товаров — CyberGear</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">CyberGear</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Каталог</span>
+    </nav>
+
+    <section class="section">
+      <h1 class="section__title">Каталог товаров</h1>
+      <p class="section__description">Профессиональные девайсы для соревновательных игр.</p>
+    </section>
+
+    <section class="catalog-layout">
+      <aside class="catalog-filters">
+        <h2 class="catalog-filters__title">Фильтры</h2>
+        <form class="filters-form" action="#" method="get">
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__legend">Категория</legend>
+            <label class="filters-form__label"><input type="checkbox" name="category" value="keyboards" checked> Клавиатуры</label>
+            <label class="filters-form__label"><input type="checkbox" name="category" value="mice" checked> Мыши</label>
+            <label class="filters-form__label"><input type="checkbox" name="category" value="headsets" checked> Гарнитуры</label>
+          </fieldset>
+          <fieldset class="filters-form__fieldset">
+            <legend class="filters-form__legend">Цена (руб.)</legend>
+            <label class="filters-form__label" for="price-from">От</label>
+            <input class="filters-form__input" id="price-from" name="price-from" type="number" min="0" placeholder="0">
+            <label class="filters-form__label" for="price-to">До</label>
+            <input class="filters-form__input" id="price-to" name="price-to" type="number" min="0" placeholder="15000">
+          </fieldset>
+          <button class="button button--primary" type="submit">Применить</button>
+        </form>
+      </aside>
+
+      <section class="catalog-products">
+        <h2 class="section__title">Список товаров</h2>
+        <div class="products-grid">
+          <article class="product-card product-card--featured">
+            <span class="product-card__badge product-card__badge--hit">Хит</span>
+            <h3 class="product-card__title">Клавиатура Vortex Pro</h3>
+            <p class="product-card__description">Механика Cherry MX Red, PBT кейкапы, RGB-подсветка.</p>
+            <p class="product-card__price">8 990 &#8381;</p>
+            <div class="product-card__actions">
+              <button class="button button--primary product-card__button" type="button" data-product="Клавиатура Vortex Pro">Заказать</button>
+              <a class="button button--secondary" href="product.html">Подробнее</a>
+            </div>
+          </article>
+          <article class="product-card product-card--discount">
+            <span class="product-card__badge">Скидка</span>
+            <h3 class="product-card__title">Мышь Phantom Sensor</h3>
+            <p class="product-card__description">Сенсор 26 000 DPI, 58 грамм, беспроводное подключение.</p>
+            <p class="product-card__price">5 490 &#8381;</p>
+            <div class="product-card__actions">
+              <button class="button button--primary product-card__button" type="button" data-product="Мышь Phantom Sensor">Заказать</button>
+              <a class="button button--secondary" href="product.html">Подробнее</a>
+            </div>
+          </article>
+          <article class="product-card">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <h3 class="product-card__title">Гарнитура Titan 7.1</h3>
+            <p class="product-card__description">Звук 7.1 Surround, драйверы 53 мм, съёмный микрофон.</p>
+            <p class="product-card__price">6 790 &#8381;</p>
+            <div class="product-card__actions">
+              <button class="button button--primary product-card__button" type="button" data-product="Гарнитура Titan 7.1">Заказать</button>
+              <a class="button button--secondary" href="product.html">Подробнее</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">&copy; 2026 CyberGear. Все права защищены.</p>
+      <p class="site-footer__info">Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#top" aria-label="Наверх">↑ Наверх</a>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <div class="order-dialog__content">
+      <button class="order-dialog__close" type="button" id="close-order-dialog" aria-label="Закрыть модальное окно">&times;</button>
+      <h2 class="order-dialog__title" id="order-dialog-title">Оформить заявку</h2>
+      <form class="order-form" id="order-form" novalidate>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-name">Ваше имя *</label>
+          <input class="order-form__input" type="text" id="order-name" name="name" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-email">Электронная почта *</label>
+          <input class="order-form__input" type="email" id="order-email" name="email" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-phone">Телефон *</label>
+          <input class="order-form__input" type="tel" id="order-phone" name="phone" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-product">Интересующий товар</label>
+          <input class="order-form__input" type="text" id="order-product" name="product" readonly>
+        </div>
+        <div class="order-form__field order-form__field--checkbox">
+          <label class="order-form__checkbox-label" for="order-agreement">
+            <input class="order-form__checkbox" type="checkbox" id="order-agreement" name="agreement" required>
+            Я согласен на обработку персональных данных *
+          </label>
+        </div>
+        <div class="form-status" id="form-status" aria-live="polite"></div>
+        <div class="order-form__actions">
+          <button class="button button--primary" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

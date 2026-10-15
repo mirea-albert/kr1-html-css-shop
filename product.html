@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Клавиатура Vortex Pro — подробные характеристики и заказ в магазине CyberGear.">
+  <title>Клавиатура Vortex Pro — CyberGear</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">CyberGear</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__current">Клавиатура Vortex Pro</span>
+    </nav>
+
+    <section class="section">
+      <div class="product-detail">
+        <div class="product-detail__media">
+          <svg class="product-detail__svg" viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Иллюстрация клавиатуры">
+            <rect width="400" height="240" rx="8" fill="#161922"/>
+            <rect x="20" y="20" width="360" height="200" rx="6" fill="#1e2230" stroke="#00e5ff" stroke-width="2"/>
+            <text x="200" y="125" fill="#00e5ff" font-size="20" font-family="sans-serif" font-weight="bold" text-anchor="middle">Vortex Pro Mechanical RGB</text>
+          </svg>
+        </div>
+        <div class="product-detail__info">
+          <span class="product-card__badge product-card__badge--hit">Хит продаж</span>
+          <h1 class="product-detail__title">Клавиатура Vortex Pro</h1>
+          <p class="product-detail__description">Флагманская соревновательная механическая клавиатура с индивидуальной настройкой RGB-подсветки, PBT кейкапами двойного литья и откликом 1 мс.</p>
+          <p class="product-detail__price">8 990 &#8381;</p>
+          <div class="product-detail__actions">
+            <button class="button button--primary product-card__button" type="button" data-product="Клавиатура Vortex Pro">Заказать</button>
+            <a class="button button--secondary" href="order.html">Оформить доставку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Технические характеристики</h2>
+      <table class="product-table">
+        <caption class="product-table__caption">Характеристики игровой клавиатуры Vortex Pro</caption>
+        <thead>
+          <tr>
+            <th>Параметр</th>
+            <th>Значение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Тип переключателей</td>
+            <td>Механические Cherry MX Red (линейные)</td>
+          </tr>
+          <tr>
+            <td>Форм-фактор</td>
+            <td>TKL (80%, без цифрового блока)</td>
+          </tr>
+          <tr>
+            <td>Материал корпуса</td>
+            <td>Авиационный алюминиевый сплав</td>
+          </tr>
+          <tr>
+            <td>Частота опроса</td>
+            <td>1 000 Гц (время отклика 1 мс)</td>
+          </tr>
+          <tr>
+            <td>Подключение</td>
+            <td>Съёмный кабель USB Type-C в оплётке</td>
+          </tr>
+          <tr>
+            <td>Гарантия</td>
+            <td>24 месяца</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">&copy; 2026 CyberGear. Все права защищены.</p>
+      <p class="site-footer__info">Дисциплина: Фронтенд и бэкенд разработка</p>
+    </div>
+  </footer>
+
+  <a class="back-to-top" href="#top" aria-label="Наверх">↑ Наверх</a>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <div class="order-dialog__content">
+      <button class="order-dialog__close" type="button" id="close-order-dialog" aria-label="Закрыть модальное окно">&times;</button>
+      <h2 class="order-dialog__title" id="order-dialog-title">Оформить заявку</h2>
+      <form class="order-form" id="order-form" novalidate>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-name">Ваше имя *</label>
+          <input class="order-form__input" type="text" id="order-name" name="name" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-email">Электронная почта *</label>
+          <input class="order-form__input" type="email" id="order-email" name="email" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-phone">Телефон *</label>
+          <input class="order-form__input" type="tel" id="order-phone" name="phone" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-product">Интересующий товар</label>
+          <input class="order-form__input" type="text" id="order-product" name="product" value="Клавиатура Vortex Pro" readonly>
+        </div>
+        <div class="order-form__field order-form__field--checkbox">
+          <label class="order-form__checkbox-label" for="order-agreement">
+            <input class="order-form__checkbox" type="checkbox" id="order-agreement" name="agreement" required>
+            Я согласен на обработку персональных данных *
+          </label>
+        </div>
+        <div class="form-status" id="form-status" aria-live="polite"></div>
+        <div class="order-form__actions">
+          <button class="button button--primary" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

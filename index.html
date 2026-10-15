@@ -3,191 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог товаров</title>
+  <meta name="description" content="Интернет-магазин профессиональной игровой периферии CyberGear. Клавиатуры, мыши и гарнитуры для киберспорта.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CyberGear — Магазин игровой периферии">
+  <meta property="og:description" content="Профессиональная периферия для геймеров и киберспортсменов.">
+  <meta property="og:image" content="https://mirea-albert.github.io/kr1-html-css-shop/images/preview.jpg">
+  <title>CyberGear — Главная</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
 </head>
-<body>
-
-  <header>
-    <div class="site-header">
-      <a class="site-logo" href="index.html">ShopProject</a>
-
+<body id="top">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">CyberGear</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#popular">Популярные товары</a></li>
-          <li><a href="#advantages">Преимущества</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-
   <main>
     <section class="hero">
-      <h1>Учебный интернет-магазин</h1>
-      <p>
-        Это стартовая страница учебного frontend-проекта.
-        В дальнейшем на её основе будет разработан многостраничный сайт
-        интернет-магазина или каталога услуг.
-      </p>
-      <a class="button" href="#popular">Перейти к товарам</a>
+      <div class="hero__inner">
+        <h1 class="hero__title">Экипировка для киберспорта</h1>
+        <p class="hero__description">Профессиональная периферия, созданная для побед. Максимальная точность, минимальный отклик и надёжность в каждом клике.</p>
+        <button class="button button--primary hero__button" type="button" id="open-modal-hero">Оставить заявку</button>
+      </div>
     </section>
-    
-    <section class="section" id="advantages">
-      <h2>Преимущества проекта</h2>
 
-      <ul class="advantages-list">
-        <li>понятная HTML-структура;</li>
-        <li>семантические блоки страницы;</li>
-        <li>подключение внешнего CSS-файла;</li>
-        <li>подготовка к разработке многостраничного сайта.</li>
-      </ul>
+    <section class="section" id="advantages">
+      <h2 class="section__title">Почему выбирают нас</h2>
+      <div class="advantages-grid">
+        <article class="advantage-card">
+          <h3 class="advantage-card__title">Официальная гарантия</h3>
+          <p class="advantage-card__description">2 года гарантии на всю продукцию с быстрой заменой при неисправности.</p>
+        </article>
+        <article class="advantage-card">
+          <h3 class="advantage-card__title">Быстрая доставка</h3>
+          <p class="advantage-card__description">Доставка по всей России от 1 дня. Бесплатно при заказе от 5 000 рублей.</p>
+        </article>
+        <article class="advantage-card">
+          <h3 class="advantage-card__title">Проверено про-игроками</h3>
+          <p class="advantage-card__description">Каждое устройство протестировано игроками профессиональных киберспортивных лиг.</p>
+        </article>
+      </div>
     </section>
 
     <section class="section" id="popular">
-      <h2>Популярные товары</h2>
-
-      <article class="product-card">
-        <h3>Товар 1</h3>
-        <p>Краткое описание учебного товара.</p>
-        <p>Цена: 1000 руб.</p>
-        <button class="button product-card__button" type="button" data-product="Товар 1">
-          Заказать
-        </button>
-      </article>
-
-      <article class="product-card">
-        <h3>Товар 2</h3>
-        <p>Краткое описание учебного товара.</p>
-        <p>Цена: 1500 руб.</p>
-        <button class="button product-card__button" type="button" data-product="Товар 2">
-          Заказать
-        </button>
-      </article>
-
-      <article class="product-card">
-        <h3>Товар 3</h3>
-        <p>Краткое описание учебного товара.</p>
-        <p>Цена: 2000 руб.</p>
-        <button class="button product-card__button" type="button" data-product="Товар 3">
-          Заказать
-        </button>
-      </article>
+      <h2 class="section__title">Популярные товары</h2>
+      <div class="products-grid">
+        <article class="product-card product-card--featured">
+          <span class="product-card__badge product-card__badge--hit">Хит</span>
+          <h3 class="product-card__title">Клавиатура Vortex Pro</h3>
+          <p class="product-card__description">Механическая клавиатура с переключателями Cherry MX Red, RGB-подсветкой и алюминиевым корпусом.</p>
+          <p class="product-card__price">8 990 &#8381;</p>
+          <div class="product-card__actions">
+            <button class="button button--primary product-card__button" type="button" data-product="Клавиатура Vortex Pro">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+          </div>
+        </article>
+        <article class="product-card product-card--discount">
+          <span class="product-card__badge">Скидка</span>
+          <h3 class="product-card__title">Мышь Phantom Sensor</h3>
+          <p class="product-card__description">Сверхлёгкая беспроводная мышь весом 58 г с оптическим сенсором 26 000 DPI и частотой опроса 4 000 Гц.</p>
+          <p class="product-card__price">5 490 &#8381;</p>
+          <div class="product-card__actions">
+            <button class="button button--primary product-card__button" type="button" data-product="Мышь Phantom Sensor">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+          </div>
+        </article>
+        <article class="product-card">
+          <span class="product-card__badge product-card__badge--new">Новинка</span>
+          <h3 class="product-card__title">Гарнитура Titan 7.1</h3>
+          <p class="product-card__description">Игровая гарнитура с пространственным звуком 7.1, 53-мм динамиками и съёмным микрофоном с шумоподавлением.</p>
+          <p class="product-card__price">6 790 &#8381;</p>
+          <div class="product-card__actions">
+            <button class="button button--primary product-card__button" type="button" data-product="Гарнитура Titan 7.1">Заказать</button>
+            <a class="button button--secondary" href="product.html">Подробнее</a>
+          </div>
+        </article>
+      </div>
     </section>
-
-    <aside class="aside-info">
-      <h2>Информация для студентов</h2>
-      <p>
-        На следующих практических занятиях этот проект будет расширяться:
-        появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
-        БЭМ-структура и адаптивная версия сайта.
-      </p>
-    </aside>
-
-    <section>
-        <h2>О проекте</h2>
-            <p>
-                В рамках данного проекта будет разработан многостраничный сайт
-                интернет-магазина или каталога услуг. Проект будет постепенно
-                расширяться на следующих практических занятиях.
-            </p>
-    </section>
-
   </main>
 
-  <footer id="contacts">
-    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  <footer class="site-footer" id="contacts">
+    <div class="site-footer__inner">
+      <p class="site-footer__copy">&copy; 2026 CyberGear. Все права защищены.</p>
+      <p class="site-footer__info">Дисциплина: Фронтенд и бэкенд разработка | Связь: info@cybergear.ru | +7 (800) 555-35-35</p>
+    </div>
   </footer>
 
+  <a class="back-to-top" href="#top" aria-label="Наверх">↑ Наверх</a>
+
   <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
-    <h2 id="order-dialog-title">Оформление заявки</h2>
-    <form class="order-form" id="order-form" action="#" method="post" novalidate>
-      <input id="selected-product" name="selected-product" type="hidden">
-      <div class="form-field">
-        <label for="order-name">Имя</label>
-        <input
-          id="order-name"
-          name="name"
-          type="text"
-          placeholder="Введите ваше имя"
-          minlength="2"
-          autocomplete="given-name"
-          required
-        >
-      </div>
-      <div class="form-field">
-        <label for="order-email">E-mail</label>
-        <input
-          id="order-email"
-          name="email"
-          type="email"
-          placeholder="example@mail.ru"
-          autocomplete="email"
-          required
-        >
-      </div>
-      <div class="form-field">
-        <label for="order-phone">Телефон</label>
-        <input
-          id="order-phone"
-          name="phone"
-          type="tel"
-          inputmode="tel"
-          placeholder="+7 (900) 000-00-00"
-          pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
-          required
-        >
-        <small>Формат: +7 (900) 000-00-00</small>
-      </div>
-      <div class="form-field">
-        <label for="order-date">Дата связи</label>
-        <input
-          id="order-date"
-          name="date"
-          type="date"
-        >
-      </div>
-      <div class="form-field">
-        <label for="order-topic">Тема заявки</label>
-        <select id="order-topic" name="topic" required>
-          <option value="">Выберите тему</option>
-          <option value="product">Заказ товара</option>
-          <option value="consultation">Консультация</option>
-          <option value="delivery">Доставка</option>
-        </select>
-      </div>
-      <div class="form-field">
-        <label for="order-comment">Комментарий</label>
-        <textarea
-          id="order-comment"
-          name="comment"
-          rows="4"
-          placeholder="Укажите дополнительную информацию"
-        ></textarea>
-      </div>
-      <div class="form-field form-field--checkbox">
-        <label>
-          <input
-            id="order-agreement"
-            name="agreement"
-            type="checkbox"
-            required
-          >
-          Я согласен на обработку данных
-        </label>
-      </div>
-      <div class="form-actions">
-        <button type="button" id="close-order-dialog">Закрыть</button>
-        <button type="submit">Отправить заявку</button>
-      </div>
-    </form>
+    <div class="order-dialog__content">
+      <button class="order-dialog__close" type="button" id="close-order-dialog" aria-label="Закрыть модальное окно">&times;</button>
+      <h2 class="order-dialog__title" id="order-dialog-title">Оформить заявку</h2>
+      <form class="order-form" id="order-form" novalidate>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-name">Ваше имя *</label>
+          <input class="order-form__input" type="text" id="order-name" name="name" placeholder="Иван Иванов" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-email">Электронная почта *</label>
+          <input class="order-form__input" type="email" id="order-email" name="email" placeholder="ivan@example.com" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-phone">Телефон *</label>
+          <input class="order-form__input" type="tel" id="order-phone" name="phone" placeholder="+7 (999) 123-45-67" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-product">Интересующий товар</label>
+          <input class="order-form__input" type="text" id="order-product" name="product" readonly>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="order-comment">Комментарий к заказу</label>
+          <textarea class="order-form__textarea" id="order-comment" name="comment" rows="3" placeholder="Укажите пожелания или адрес доставки"></textarea>
+        </div>
+        <div class="order-form__field order-form__field--checkbox">
+          <label class="order-form__checkbox-label" for="order-agreement">
+            <input class="order-form__checkbox" type="checkbox" id="order-agreement" name="agreement" required>
+            Я согласен на обработку персональных данных *
+          </label>
+        </div>
+        <div class="form-status" id="form-status" aria-live="polite"></div>
+        <div class="order-form__actions">
+          <button class="button button--primary" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </div>
   </dialog>
-  <p class="success-message" id="success-message" hidden>
-    Форма успешно отправлена!
-  </p>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
