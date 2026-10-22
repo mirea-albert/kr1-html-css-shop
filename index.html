@@ -19,11 +19,11 @@
         <ul class="site-nav__list">
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="index.html">Главная</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="product.html">Товар</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заказ</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html#faq">Вопросы</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
         </ul>
       </nav>
@@ -77,7 +77,7 @@
           <p class="product-card__price">5 490 &#8381;</p>
           <div class="product-card__actions">
             <button class="button button--primary product-card__button" type="button" data-product="Мышь Phantom Sensor">Заказать</button>
-            <a class="button button--secondary" href="product.html">Подробнее</a>
+            <a class="button button--secondary" href="product-2.html">Подробнее</a>
           </div>
         </article>
         <article class="product-card">
@@ -87,9 +87,33 @@
           <p class="product-card__price">6 790 &#8381;</p>
           <div class="product-card__actions">
             <button class="button button--primary product-card__button" type="button" data-product="Гарнитура Titan 7.1">Заказать</button>
-            <a class="button button--secondary" href="product.html">Подробнее</a>
+            <a class="button button--secondary" href="product-3.html">Подробнее</a>
           </div>
         </article>
+      </div>
+    </section>
+
+    <!-- Блок часто задаваемых вопросов (FAQ) -->
+    <section class="section" id="faq">
+      <h2 class="section__title">Часто задаваемые вопросы</h2>
+      <p class="section__description">Ответы на популярные вопросы о доставке, гарантии и оплате.</p>
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-question">Как работает официальная 2-летняя гарантия?</summary>
+          <p class="faq-answer">При обнаружении любого заводского брака мы заменяем устройство на новое в течение 3 рабочих дней без ожидания затяжных сервисных экспертиз.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Можно ли протестировать девайсы перед покупкой?</summary>
+          <p class="faq-answer">Да, в нашем фирменном шоуруме по адресу г. Москва, пр-т Вернадского, д. 78 открыта интерактивная демо-зона со всеми моделями каталога.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Какие условия и сроки бесплатной доставки?</summary>
+          <p class="faq-answer">Доставка курьером по всей России полностью бесплатна при сумме заказа от 5 000 рублей. Срок доставки составляет от 1 до 3 рабочих дней.</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Можно ли проверить устройство до момента оплаты?</summary>
+          <p class="faq-answer">Да, при получении у курьера вы можете вскрыть посылку, осмотреть комплектацию и целостность устройства перед подтверждением платежа.</p>
+        </details>
       </div>
     </section>
   </main>
@@ -123,10 +147,6 @@
         <div class="order-form__field">
           <label class="order-form__label" for="order-product">Интересующий товар</label>
           <input class="order-form__input" type="text" id="order-product" name="product" readonly>
-        </div>
-        <div class="order-form__field">
-          <label class="order-form__label" for="order-comment">Комментарий к заказу</label>
-          <textarea class="order-form__textarea" id="order-comment" name="comment" rows="3" placeholder="Укажите пожелания или адрес доставки"></textarea>
         </div>
         <div class="order-form__field order-form__field--checkbox">
           <label class="order-form__checkbox-label" for="order-agreement">
