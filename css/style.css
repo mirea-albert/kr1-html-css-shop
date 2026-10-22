@@ -58,8 +58,11 @@ body {
   outline-offset: 4px;
 }
 
-/* Шапка и навигация (БЭМ + Flexbox) */
+/* Шапка и навигация (Sticky + БЭМ + Flexbox) */
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
 }
@@ -346,7 +349,7 @@ main {
 .catalog-filters {
   grid-area: filters;
   position: sticky;
-  top: var(--space-md);
+  top: 120px;
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
